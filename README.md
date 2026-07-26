@@ -1,6 +1,7 @@
 # 🧠 第二大脑(Second Brain)
 
 一个**模仿人类大脑、可接入 AI agent 的个人记忆系统**。
+<img width="2238" height="1496" alt="image" src="https://github.com/user-attachments/assets/b3a0a9b9-bfab-4577-8aa8-6c00686c70c7" />
 
 它不是一个普通的笔记软件,而是一个会**巩固、会遗忘、会联想、会被一句话唤醒**的记忆系统。记忆存在本地的 Obsidian 知识库里(Markdown,你完全掌控),通过一个 MCP 服务器,任意 AI agent(Claude Code / Claude Desktop 等)都能直接读写它——并遵守内置的操作协议。
 
