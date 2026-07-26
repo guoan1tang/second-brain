@@ -5,9 +5,19 @@
   "description": "把网页一键存入你的第二大脑(标题/网址/选中文字/备注)",
   "permissions": ["activeTab", "storage"],
   "host_permissions": ["http://127.0.0.1/*"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "存入第二大脑"
+    "default_title": "存入第二大脑",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
   },
   "content_scripts": [
     {

@@ -5,10 +5,10 @@
 ## 现有工具
 
 - **[web-clipper](web-clipper/)** — 网页捕捉。浏览器扩展 + 本地捕捉服务:浏览时一键把「标题 / 网址 / 选中文字 / 备注」存入大脑收件箱,后续巩固成正式记忆。
+- **[consolidator](consolidator/)** — 巩固进程。扫描收件箱碎片,分析(归类/实体关联/查重),生成巩固报告,并晋升为长期记忆(`scan` / `report` / `apply --yes`)。
 
 ## 规划中
 
-- **consolidator** — 巩固进程:定期把收件箱碎片提炼、归类、晋升为长期记忆
 - **semantic-search** — 向量语义检索:本地 embedding,换个说法也能命中
 - 更多……(欢迎提 issue / PR)
 

@@ -1,0 +1,11 @@
+{
+  "name": "second-brain-consolidator",
+  "version": "1.0.0",
+  "description": "Consolidation process: scan Inbox, analyze, promote fragments into long-term memory",
+  "type": "module",
+  "scripts": {
+    "scan": "node consolidator.js scan",
+    "report": "node consolidator.js report",
+    "apply": "node consolidator.js apply"
+  }
+}
