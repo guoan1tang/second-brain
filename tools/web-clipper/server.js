@@ -9,7 +9,13 @@ import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const VAULT = process.env.VAULT_PATH || path.resolve(__dirname, "../../vault");
+function resolveVault(rel) {
+  if (process.env.VAULT_PATH) return process.env.VAULT_PATH;
+  const cfg = path.join(process.env.HOME || "", ".config", "second-brain", "vault"); // 本机配置:指向你的真大脑
+  try { const v = fs.readFileSync(cfg, "utf8").trim(); if (v) return v; } catch {}
+  return path.resolve(__dirname, rel);
+}
+const VAULT = resolveVault("../../vault");
 const PORT = process.env.PORT || 3737;
 const WEB_DIR = path.join(VAULT, "00-Inbox · 收件箱", "web");
 

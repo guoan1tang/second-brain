@@ -13,8 +13,11 @@
 ```bash
 cd tools/web-clipper
 node server.js
-# 默认监听 http://127.0.0.1:3737,写入 ../../vault/00-Inbox · 收件箱/web/
-# 可用环境变量覆盖:VAULT_PATH=/你的/vault PORT=3737 node server.js
+# 默认监听 http://127.0.0.1:3737。写入哪个 vault 的优先级:
+#   环境变量 VAULT_PATH  >  本机配置 ~/.config/second-brain/vault  >  仓库自带 ../../vault
+# 把服务指向"你自己的大脑"(推荐,配一次后直接 node server.js 即可):
+#   mkdir -p ~/.config/second-brain && echo "/你的/大脑路径" > ~/.config/second-brain/vault
+# 或临时用环境变量:VAULT_PATH=/你的/vault node server.js
 ```
 
 看到 `🧠 Second Brain 捕捉服务已启动` 即可。建议保持后台运行。
