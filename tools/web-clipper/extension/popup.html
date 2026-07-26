@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 存入第二大脑</h1>
+    <div id="status" class="status checking">检查捕捉服务…</div>
+
+    <div class="field">
+      <label for="title">标题</label>
+      <input type="text" id="title" placeholder="页面标题">
+    </div>
+
+    <div class="field">
+      <label for="url">网址</label>
+      <input type="text" id="url" readonly>
+    </div>
+
+    <div class="field">
+      <label for="selection">选中内容</label>
+      <textarea id="selection" rows="3" placeholder="在网页上选中文字会自动填入"></textarea>
+    </div>
+
+    <div class="field">
+      <label for="note">我的备注</label>
+      <textarea id="note" rows="2" placeholder="为什么关注它?"></textarea>
+    </div>
+
+    <div class="row">
+      <div class="field half">
+        <label for="type">类型</label>
+        <select id="type">
+          <option value="episodic">情景(我读了…)</option>
+          <option value="semantic">语义(知识/概念)</option>
+          <option value="procedural">程序(怎么做)</option>
+        </select>
+      </div>
+      <div class="field half">
+        <label for="tags">标签</label>
+        <input type="text" id="tags" placeholder="逗号分隔,如:AI, 论文">
+      </div>
+    </div>
+
+    <button id="save">存入第二大脑</button>
+    <div id="result" class="result"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { width: 340px; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+.container { padding: 16px; }
+h1 { font-size: 16px; margin-bottom: 10px; color: #1a1a2e; }
+
+.status { font-size: 12px; padding: 6px 10px; border-radius: 6px; margin-bottom: 12px; }
+.status.checking { background: #f0f0f0; color: #888; }
+.status.ok { background: #e6f7ed; color: #1a7f4b; }
+.status.off { background: #fdecec; color: #c0392b; }
+
+.field { margin-bottom: 10px; }
+.field label { display: block; font-size: 12px; color: #666; margin-bottom: 4px; }
+.field input, .field textarea, .field select {
+  width: 100%; padding: 7px 9px; font-size: 13px;
+  border: 1px solid #d8d8e0; border-radius: 6px; outline: none;
+  font-family: inherit;
+}
+.field input:focus, .field textarea:focus, .field select:focus { border-color: #6c63ff; }
+.field input[readonly] { background: #f7f7fa; color: #999; }
+textarea { resize: vertical; }
+
+.row { display: flex; gap: 10px; }
+.field.half { flex: 1; }
+
+button {
+  width: 100%; padding: 10px; font-size: 14px; font-weight: 600;
+  color: #fff; background: #6c63ff; border: none; border-radius: 8px;
+  cursor: pointer; margin-top: 4px;
+}
+button:hover { background: #5a52e0; }
+button:disabled { background: #b3b0e8; cursor: default; }
+
+.result { font-size: 12px; margin-top: 10px; min-height: 16px; word-break: break-all; }
+.result.ok { color: #1a7f4b; }
+.result.err { color: #c0392b; }

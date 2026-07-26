@@ -52,9 +52,11 @@ second-brain/
 │   ├── 40-Entities · 实体图谱/    人/地/物/概念
 │   ├── 90-Consolidation · 巩固日志/  巩固记录 + 更正日志
 │   └── _templates/    三套记忆模板
-└── mcp/               MCP 服务器(Node)
-    ├── package.json
-    └── server.js
+├── mcp/               MCP 服务器(Node)
+│   ├── package.json
+│   └── server.js
+└── tools/             工具集(逐步完善)
+    └── web-clipper/   网页捕捉:浏览器扩展 + 本地捕捉服务
 ```
 
 ## 🔧 MCP 工具(11 个)
@@ -72,6 +74,21 @@ second-brain/
 | `detect_contradictions` | 扫描疑似重复/同主题 | 🟢 |
 | `list_memories` | 列出记忆 | — |
 | `forget` | 遗忘(软归档/硬删除) | 🔴 硬删需确认 |
+
+## 🧰 工具集(`tools/`)
+
+围绕第二大脑的工具,逐步完善。
+
+### 📎 web-clipper(网页捕捉)
+
+浏览网页时,一键把「标题 / 网址 / 选中文字 / 备注」存入大脑收件箱:
+
+1. 启动本地捕捉服务:`cd tools/web-clipper && node server.js`
+2. 装扩展:`chrome://extensions` → 开「开发者模式」→「加载已解压的扩展程序」→ 选 `tools/web-clipper/extension/`
+3. 在任意网页点工具栏 🧠 图标 → 补充备注/标签 → 「存入第二大脑」
+4. 内容落到 `vault/00-Inbox · 收件箱/web/`,后续巩固成正式记忆
+
+详见 [`tools/web-clipper/README.md`](tools/web-clipper/README.md)。
 
 ## ⚙️ 自定义
 

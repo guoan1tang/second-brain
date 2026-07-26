@@ -1,0 +1,10 @@
+{
+  "name": "second-brain-web-clipper",
+  "version": "1.0.0",
+  "description": "Local capture server for the Second Brain web clipper (zero-dependency)",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
