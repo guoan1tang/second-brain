@@ -31,6 +31,10 @@ async function init() {
   }
 }
 
+// 自动浮层开关
+chrome.storage.local.get({ sbAutoBubble: true }, (s) => { $("autoBubble").checked = s.sbAutoBubble; });
+$("autoBubble").addEventListener("change", (e) => { chrome.storage.local.set({ sbAutoBubble: e.target.checked }); });
+
 $("save").addEventListener("click", async () => {
   const btn = $("save");
   const result = $("result");
