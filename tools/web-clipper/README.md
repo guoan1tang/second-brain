@@ -1,4 +1,5 @@
 # 📎 Web Clipper · 网页捕捉
+<img width="2142" height="1166" alt="image" src="https://github.com/user-attachments/assets/e17b98c2-8354-42c5-b7ee-34075ac7ea30" />
 
 浏览网页时,一键把「标题 / 网址 / 选中文字 / 备注」存入你的第二大脑。
 由两部分组成:
